@@ -13,11 +13,13 @@ public class Employee extends Person {
     double salary;
     Order order;
 // Constructor
-    
-    public void Employee(double e_salary){
-        this.salary = e_salary;
+
+    public Employee(double p_p_id, String p_name, String p_email, double p_contact,double salary) {
+        super(p_p_id, p_name, p_email, p_contact);
+        this.salary=salary;
     }
     
+   
 // setter
     public void setSalary(double salary){
         this.salary = salary;

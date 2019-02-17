@@ -17,7 +17,7 @@ public class Person {
     double contact;
     
     //Constructor
-    public void Person(double p_p_id, String p_name, String p_email,Double p_contact)
+    public Person(double p_p_id, String p_name, String p_email,Double p_contact)
     {
      this.p_id= p_p_id;
      this.name = p_name;

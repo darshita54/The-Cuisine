@@ -39,7 +39,10 @@ public class TheCuisine {
          System.out.println("-----------Restaurant----------");
         Restaurant r=new Restaurant(2,438-888-9999,"The Cusine","312,Avenue Hope","cuisinetaste@gmail.com","www.theCuisine.com");
         r.r_Display();
-                
+         
+        
+        Person p=new Person(1.0,"liliy","abc@gmail.com",1234567.0);
+        p.P_Display();
     }
     
 }

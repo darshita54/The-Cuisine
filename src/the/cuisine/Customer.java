@@ -10,12 +10,16 @@ package the.cuisine;
  * @author 1894461
  */
 public class Customer extends Person {
-    String type;
+    String type; 
     Order order;
     //constructor
-    public void Customer(String c_type){
-        this.type=c_type;
+   public Customer(String type, Order order, double p_p_id, String p_name, String p_email, Double p_contact){
+        super(p_p_id, p_name, p_email, p_contact);
+        this.type = type;
+        this.order = order;
     }
+
+   
     //getter
     public String getc_type(){
         return this.type;

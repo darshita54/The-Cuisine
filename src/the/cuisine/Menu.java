@@ -16,6 +16,8 @@ public class Menu {
     int m_id;
     String type,category;
     Date startDate,endDate;
+    Restaurant restaurant;
+    
     
     //constructor 
     public Menu(int id,String m_type,String m_category,Date s_date,Date e_date)

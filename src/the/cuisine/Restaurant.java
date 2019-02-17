@@ -24,6 +24,9 @@ public class Restaurant {
      this.email=r_email;
      this.website=r_website;
     }
+
+   
+    
     
     //getter method
     public int getR_ID()

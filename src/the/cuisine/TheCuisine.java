@@ -32,6 +32,11 @@ public class TheCuisine {
         Date tempdate2=new Date(1722019);
         Menu m=new Menu(1,"chinese","starter",tempdate1,tempdate2);
         m.m_display();
+        
+        // Constructor of restaurant class
+        Restaurant r=new Restaurant(2,438-888-9999,"The Cusine","312,Avenue Hope","cuisinetaste@gmail.com","www.theCuisine.com");
+        r.r_Display();
+                
     }
     
 }

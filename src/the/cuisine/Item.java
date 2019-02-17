@@ -13,7 +13,7 @@ public class Item {
     int i_id;
     double i_Price,i_Quantity;
     String i_Name;
-  
+   Category category;
     Item(int I_id,String I_Name,double I_Price,double I_Quantity) 
     {
         this.i_id=I_id;

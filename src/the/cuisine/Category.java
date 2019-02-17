@@ -12,8 +12,8 @@ package the.cuisine;
 public class Category {
     
   int c_id;
-    String c_Name,c_Type;
-
+  String c_Name,c_Type;
+  Menu menu;
     
    
     Category(int C_Id, String C_Name, String C_Type)

@@ -10,11 +10,11 @@ package the.cuisine;
  * @author 1894420
  */
 public class Item {
-    
-    double i_id,i_Price,i_Quantity;
+    int i_id;
+    double i_Price,i_Quantity;
     String i_Name;
   
-    public void I_Item(double I_id,String I_Name,double I_Price,double I_Quantity) 
+    Item(int I_id,String I_Name,double I_Price,double I_Quantity) 
     {
         this.i_id=I_id;
         this.i_Name=I_Name;
@@ -22,7 +22,7 @@ public class Item {
         this.i_Quantity=I_Quantity;
     }
 
-    public void setI_id(double i_id) {
+    public void setI_id(int i_id) {
         this.i_id = i_id;
     }
 

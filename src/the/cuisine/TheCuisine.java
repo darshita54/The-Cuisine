@@ -16,6 +16,11 @@ public class TheCuisine {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Category c=new Category(1,"meal","Indian");
+        c.C_Display();
+        
+        
     }
     
 }

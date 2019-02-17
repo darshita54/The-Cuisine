@@ -11,26 +11,28 @@ package the.cuisine;
  */
 public class Category {
     
-    double c_id;
-    String Name,Type;
+  int c_id;
+    String c_Name,c_Type;
+
     
-   public void C_category(double C_Id, String C_Name, String C_Type)
+   
+    Category(int C_Id, String C_Name, String C_Type)
    {
        this.c_id=C_Id;
-       this.Name=C_Name;
-       this.Type=C_Type;
+       this.c_Name=C_Name;
+       this.c_Type=C_Type;
    }
 
-    public void setC_id(double c_id) {
+    public void setC_id(int c_id) {
         this.c_id = c_id;
     }
 
     public void setName(String Name) {
-        this.Name = Name;
+        this.c_Name = Name;
     }
 
     public void setType(String Type) {
-        this.Type = Type;
+        this.c_Type = Type;
     }
 
     public double getC_id() {
@@ -38,17 +40,17 @@ public class Category {
     }
 
     public String getName() {
-        return Name;
+        return c_Name;
     }
 
     public String getType() {
-        return Type;
+        return c_Type;
     }
    
    public void C_Display()
    {
        System.out.println("Category Id :"+c_id);
-       System.out.println("Category Name :"+Name);
-       System.out.println("Category Type :"+Type);
+       System.out.println("Category Name :"+c_Name);
+       System.out.println("Category Type :"+c_Type);
    }
 }

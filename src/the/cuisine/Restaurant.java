@@ -24,4 +24,33 @@ public class Restaurant {
      this.email=r_email;
      this.website=r_website;
     }
+    
+    //getter method
+    public int getR_ID()
+    {
+     return this.r_id;
+    }
+    public int getContact()
+    {
+     return this.contact;
+    }
+    public String getName()
+    {
+     return this.name;
+    }
+    public String getAddress()
+    {
+     return this.address;
+    }
+    public String getEmail()
+    {
+     return this.email;
+    }
+    public String getWebsite()
+    {
+     return this.website;
+    }
+    
+    
 }
+

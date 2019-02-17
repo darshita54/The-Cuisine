@@ -5,6 +5,8 @@
  */
 package the.cuisine;
 
+import java.util.Date;
+
 /**
  *
  * @author 1894420
@@ -21,6 +23,15 @@ public class TheCuisine {
         c.C_Display();
         
         
+        
+        
+        
+        
+        // Constructor of menu class
+        Date tempdate1=new Date(322019);
+        Date tempdate2=new Date(1722019);
+        Menu m=new Menu(1,"chinese","starter",tempdate1,tempdate2);
+        m.m_display();
     }
     
 }

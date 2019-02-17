@@ -64,9 +64,9 @@ public class Person {
      */
     public void P_Display()
    {
-       System.out.println("Category Id :"+p_id);
-       System.out.println("Category Name :"+name);
-       System.out.println("Category Contact Number :"+ contact);
-       System.out.println("Category email :"+ email);
+       System.out.println("Person Id :"+p_id);
+       System.out.println("Person Name :"+name);
+       System.out.println("Person Contact Number :"+ contact);
+       System.out.println("Person email :"+ email);
    }
 }

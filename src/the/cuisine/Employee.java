@@ -9,6 +9,6 @@ package the.cuisine;
  *
  * @author 1895268
  */
-public class Employer extends Person {
+public class Employee extends Person {
     double salary;
 }

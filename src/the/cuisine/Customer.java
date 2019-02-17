@@ -11,6 +11,7 @@ package the.cuisine;
  */
 public class Customer extends Person {
     String type;
+    Order order;
     //constructor
     public void Customer(String c_type){
         this.type=c_type;

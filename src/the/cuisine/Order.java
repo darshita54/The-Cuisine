@@ -16,7 +16,7 @@ public class Order {
     Date date;
     Double quantity;
     int totalAmount;
-    
+    Customer customer;
     
 
   //constructor

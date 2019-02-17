@@ -11,7 +11,7 @@ package the.cuisine;
  */
 public class Employee extends Person {
     double salary;
-    
+    Order order;
 // Constructor
     
     public void Employee(double e_salary){

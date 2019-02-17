@@ -11,4 +11,25 @@ package the.cuisine;
  */
 public class Employee extends Person {
     double salary;
+    
+// Constructor
+    
+    public void Employee(double e_salary){
+        this.salary = e_salary;
+    }
+    
+// setter
+    public void setSalary(double salary){
+        this.salary = salary;
+    }
+    
+//getter
+    public double getSalary(){
+        return salary;   
+    }
+    
+// Functiopn to display 
+    public void E_display(){
+        System.out.println("Salary is  :"+salary);
+    }
 }

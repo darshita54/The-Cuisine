@@ -18,16 +18,16 @@ public class TheCuisine {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        //Constructor of Category class
         Category c=new Category(1,"meal","Indian");
         c.C_Display();
+       
+        //Constructor of Item class
+       
+         Item i=new Item(2,"Samosa", 1.45, 2);
+        i.I_Display();
         
-        
-        
-        
-        
-        
-        // Constructor of menu class
+         // Constructor of menu class
         Date tempdate1=new Date(322019);
         Date tempdate2=new Date(1722019);
         Menu m=new Menu(1,"chinese","starter",tempdate1,tempdate2);

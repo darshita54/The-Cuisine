@@ -40,9 +40,14 @@ public class TheCuisine {
         Restaurant r=new Restaurant(2,438-888-9999,"The Cusine","312,Avenue Hope","cuisinetaste@gmail.com","www.theCuisine.com");
         r.r_Display();
          
-        
+         // Constructor of Person class
         Person p=new Person(1.0,"liliy","abc@gmail.com",1234567.0);
         p.P_Display();
+        
+         // Constructor of Employee class
+        
+        Employee e = new Employee(34,"John", "cfg@gmail.com",43278,4563.12);
+        e.E_display();
     }
     
 }

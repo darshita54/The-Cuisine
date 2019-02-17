@@ -61,5 +61,16 @@ public class Restaurant {
      this.email=r_email;
      this.website=r_website;
     }
+    
+    //display method
+    public void r_Display()
+    {
+     System.out.println("Restaurant id: "+r_id);
+     System.out.println("Restaurant contact Number: "+contact);
+     System.out.println("Restaurant name: "+name);
+     System.out.println("Restaurant address: "+address);
+     System.out.println("Restaurant email: "+email);
+     System.out.println("Restaurant website: "+website);
+    }
 }
 

@@ -11,4 +11,8 @@ package the.cuisine;
  */
 public class Restaurant {
     
+    int r_id,contact;
+    String name,address,email,website;
+    
+    
 }

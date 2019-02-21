@@ -32,6 +32,7 @@ public class TheCuisine {
          System.out.println("-----------Menu----------");
         Date tempdate1=new Date(322019);
         Date tempdate2=new Date(1722019);
+        Date tempdate3 = new Date(1012019);
         Menu m=new Menu(1,"chinese","starter",tempdate1,tempdate2);
         m.m_display();
         
@@ -45,9 +46,19 @@ public class TheCuisine {
         p.P_Display();
         
          // Constructor of Employee class
-        
+        System.out.println("-----------Employee----------");
         Employee e = new Employee(34,"John", "cfg@gmail.com",43278,4563.12);
         e.E_display();
+        
+        //customer construcotr 
+       System.out.println("-----------Customer----------");
+        Customer cust = new Customer("Indian",456,"Sachin","ab@gmail.com",784235.5);
+        cust.c_Display();
+        
+        // Order Constrctor
+        System.out.println("-----------Order----------");
+        Order od = new Order(12,tempdate3,2.0,15);
+        od.o_Display();
     }
     
 }

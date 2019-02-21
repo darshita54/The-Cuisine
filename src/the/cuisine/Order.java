@@ -20,7 +20,7 @@ public class Order {
     
 
   //constructor
-  public void Order(int o_id,Date o_date,Double o_quantity,int o_totalAmount){
+  public Order(int o_id,Date o_date,Double o_quantity,int o_totalAmount){
   this.id =o_id;
   this.date =o_date;
   this.quantity =o_quantity;

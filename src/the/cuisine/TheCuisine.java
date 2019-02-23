@@ -47,6 +47,7 @@ public class TheCuisine {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
+         System.out.println("-----------Person----------");
         Person p=new Person(date,"liliy","abc","abc@gmail.com",1234567.0);
         p.P_Display();
         
@@ -65,27 +66,7 @@ public class TheCuisine {
         Order od = new Order(12,tempdate3,2.0,15);
         od.o_Display();
         
-        
-      /*  // logic for id
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
-        LocalDateTime now = LocalDateTime.now();  
-       //  System.out.println(dtf.format(now));
-        String fname=p.fname;
-        String lname=p.lname;
-        char first=fname.charAt(0);
-        char last=lname.charAt(0);
-        if("".equals(first))
-        {
-            first='X';
-        }
-       if("".equals(last))
-        {
-            last='X';
-        }
-       String id=dtf.format(now)+"-"+first+last;
-       System.out.println("id:"+id);
-             */
-      
+
          
     }
     

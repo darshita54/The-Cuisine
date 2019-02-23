@@ -5,6 +5,8 @@
  */
 package the.cuisine;
 
+import java.util.Date;
+
 /**
  *
  * @author 1894461
@@ -13,8 +15,8 @@ public class Customer extends Person {
     String type; 
     Order order;
     //constructor
-   public Customer(String type, double p_p_id, String p_lname, String p_fname, String p_email, Double p_contact){
-        super(p_p_id, p_lname, p_fname, p_email, p_contact);
+   public Customer(String type, String date, String p_lname, String p_fname, String p_email, Double p_contact){
+        super(date, p_lname, p_fname, p_email, p_contact);
         this.type = type;
     }
 

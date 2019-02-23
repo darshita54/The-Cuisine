@@ -5,6 +5,8 @@
  */
 package the.cuisine;
 
+import java.util.Date;
+
 /**
  *
  * @author 1895268
@@ -14,8 +16,8 @@ public class Employee extends Person {
     Order order;
 // Constructor
 
-    public Employee(double p_p_id, String p_lname, String p_fname, String p_email, double p_contact,double salary) {
-        super(p_p_id, p_lname, p_fname,  p_email, p_contact);
+    public Employee(String date, String p_lname, String p_fname, String p_email, double p_contact,double salary) {
+        super(date, p_lname, p_fname,  p_email, p_contact);
         this.salary=salary;
     }
     

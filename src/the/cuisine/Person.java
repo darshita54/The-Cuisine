@@ -25,7 +25,7 @@ public class Person {
     double contact;
     
     //Constructor
-    public Person(double p_p_id, String p_lname, String p_fname, String p_email,Double p_contact)
+    public Person(String date, String p_lname, String p_fname, String p_email,Double p_contact)
     {
         
     
@@ -34,9 +34,7 @@ public class Person {
      this.email = p_email;
      this.contact = p_contact; 
      
-     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
-        LocalDateTime now = LocalDateTime.now();  
-       //  System.out.println(dtf.format(now));
+   
         char first=fname.charAt(0);
         char last=lname.charAt(0);
         if("".equals(first))
@@ -47,10 +45,11 @@ public class Person {
         {
             last='X';
         }
-       String p_id=dtf.format(now)+"-"+first+last;
+       String p_id=date+"-"+first+last;
        System.out.println("id:"+p_id);
-        this.p_id= p_p_id;
+       // this.p_id= p_p_id;
     }
+
     
     
     

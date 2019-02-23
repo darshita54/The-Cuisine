@@ -44,17 +44,20 @@ public class TheCuisine {
         r.r_Display();
          
          // Constructor of Person class
-        Person p=new Person(1.0,"liliy","abc","abc@gmail.com",1234567.0);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
+        LocalDateTime now = LocalDateTime.now(); 
+        String date=dtf.format(now);
+        Person p=new Person(date,"liliy","abc","abc@gmail.com",1234567.0);
         p.P_Display();
         
          // Constructor of Employee class
         System.out.println("-----------Employee----------");
-        Employee e = new Employee(34,"John","cena", "cfg@gmail.com",43278,4563.12);
+        Employee e = new Employee(date,"John","cena", "cfg@gmail.com",43278,4563.12);
         e.E_display();
         
         //customer construcotr 
        System.out.println("-----------Customer----------");
-        Customer cust = new Customer("Indian",456,"Sachin","Tendulkar","ab@gmail.com",784235.5);
+        Customer cust = new Customer("Indian",date,"Sachin","Tendulkar","ab@gmail.com",784235.5);
         cust.c_Display();
         
         // Order Constrctor

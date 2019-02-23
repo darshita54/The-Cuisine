@@ -5,6 +5,8 @@
  */
 package the.cuisine;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -42,23 +44,47 @@ public class TheCuisine {
         r.r_Display();
          
          // Constructor of Person class
-        Person p=new Person(1.0,"liliy","abc@gmail.com",1234567.0);
+        Person p=new Person(1.0,"liliy","abc","abc@gmail.com",1234567.0);
         p.P_Display();
         
          // Constructor of Employee class
         System.out.println("-----------Employee----------");
-        Employee e = new Employee(34,"John", "cfg@gmail.com",43278,4563.12);
+        Employee e = new Employee(34,"John","cena", "cfg@gmail.com",43278,4563.12);
         e.E_display();
         
         //customer construcotr 
        System.out.println("-----------Customer----------");
-        Customer cust = new Customer("Indian",456,"Sachin","ab@gmail.com",784235.5);
+        Customer cust = new Customer("Indian",456,"Sachin","Tendulkar","ab@gmail.com",784235.5);
         cust.c_Display();
         
         // Order Constrctor
         System.out.println("-----------Order----------");
         Order od = new Order(12,tempdate3,2.0,15);
         od.o_Display();
+        
+        
+        
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
+        LocalDateTime now = LocalDateTime.now();  
+         System.out.println(dtf.format(now));
+        String fname=p.fname;
+        String lname=p.lname;
+        char first=fname.charAt(0);
+        char last=lname.charAt(0);
+        if("".equals(first))
+        {
+            first='X';
+        }
+       if("".equals(last))
+        {
+            last='X';
+        }
+       String id=dtf.format(now)+"-"+first+last;
+       System.out.println(id);
+       
+        
+        System.out.println(first);
+         
     }
     
 }

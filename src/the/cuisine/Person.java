@@ -5,6 +5,12 @@
  */
 package the.cuisine;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
 /**
  *
  * @author 1895268
@@ -12,15 +18,19 @@ package the.cuisine;
 public class Person {
     
     double p_id;
-    String name;
+    String fname;
+    String lname;
+   // Date date;
     String email;
     double contact;
     
     //Constructor
-    public Person(double p_p_id, String p_name, String p_email,Double p_contact)
+    public Person(double p_p_id, String p_lname, String p_fname, String p_email,Double p_contact)
     {
+        
      this.p_id= p_p_id;
-     this.name = p_name;
+     this.lname = p_lname;
+     this.fname=p_fname;
      this.email = p_email;
      this.contact = p_contact; 
     }
@@ -31,7 +41,7 @@ public class Person {
     }
     
     public void setName(String name){
-        this.name = name;
+        this.fname = name;
     }
     
     public void setEmail(String email){
@@ -48,7 +58,7 @@ public class Person {
     }
     
     public String getName(){
-        return name;
+        return fname;
     }
     
     public String email(){
@@ -65,7 +75,7 @@ public class Person {
     public void P_Display()
    {
        System.out.println("Person Id :"+p_id);
-       System.out.println("Person Name :"+name);
+       System.out.println("Person Name :"+fname);
        System.out.println("Person Contact Number :"+ contact);
        System.out.println("Person email :"+ email);
    }

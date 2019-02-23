@@ -65,6 +65,10 @@ public class Restaurant {
      this.website=r_website;
     }
     
+    //id for restaurant
+    
+    
+    
     //display method
     public void r_Display()
     {

@@ -17,7 +17,7 @@ import java.util.Date;
  */
 public class Person {
     
-    double p_id;
+   String p_id;
     String fname;
     String lname;
    // Date date;
@@ -25,7 +25,7 @@ public class Person {
     double contact;
     
     //Constructor
-    public Person(String date, String p_lname, String p_fname, String p_email,Double p_contact)
+    public Person(String id, String p_lname, String p_fname, String p_email,Double p_contact)
     {
         
     
@@ -45,22 +45,12 @@ public class Person {
         {
             last='X';
         }
-       String p_id=date+"-"+first+last;
-       System.out.println("id:"+p_id);
-       // this.p_id= p_p_id;
+       p_id=id+"-"+first+last;
+      
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
     //setter
-    public void setp_id(double p_id){
+    public void setp_id(String p_id){
         this.p_id = p_id;
     }
     
@@ -77,7 +67,7 @@ public class Person {
     
     //getter
     
-    public double getp_id(){
+    public String getp_id(){
         return p_id;
     }
     

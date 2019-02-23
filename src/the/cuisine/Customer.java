@@ -31,6 +31,7 @@ public class Customer extends Person {
     }
     //display
     public void c_Display(){
+         System.out.println("persone id:"+p_id);
         System.out.println("type:"+ type);
     }
 }

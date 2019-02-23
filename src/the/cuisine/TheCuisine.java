@@ -37,7 +37,7 @@ public class TheCuisine {
        
         //Constructor of Item class
         System.out.println("-----------Item----------");
-         Item i=new Item(2,"Samosa", 1.45, 2);
+         Item i=new Item(date,"Samosa", 1.45, 2);
         i.I_Display();
         
          // Constructor of menu class

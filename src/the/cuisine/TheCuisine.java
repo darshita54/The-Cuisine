@@ -45,12 +45,12 @@ public class TheCuisine {
         Date tempdate1=new Date(322019);
         Date tempdate2=new Date(1722019);
         Date tempdate3 = new Date(1012019);
-        Menu m=new Menu(1,"chinese","starter",tempdate1,tempdate2);
+        Menu m=new Menu(date,"chinese","starter",tempdate1,tempdate2);
         m.m_display();
         
         // Constructor of restaurant class
          System.out.println("-----------Restaurant----------");
-        Restaurant r=new Restaurant(2,438-888-9999,"The Cusine","312,Avenue Hope","cuisinetaste@gmail.com","www.theCuisine.com");
+        Restaurant r=new Restaurant(date,438-888-9999,"The Cusine","312,Avenue Hope","cuisinetaste@gmail.com","www.theCuisine.com");
         r.r_Display();
          
          // Constructor of Person class

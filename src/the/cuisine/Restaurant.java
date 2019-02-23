@@ -9,27 +9,43 @@ package the.cuisine;
  *
  * @author 1894434
  */
-public class Restaurant {
+public final class Restaurant {
     
-    int r_id,contact;
+    int contact;
+    String r_id;
     String name,address,email,website;
     
     //constructor
-    public Restaurant(int id,int r_contact,String r_name,String r_address,String r_email,String r_website)
+    public Restaurant(String id,int r_contact,String r_name,String r_address,String r_email,String r_website)
     {
-     this.r_id=id;
+     
      this.contact=r_contact;
      this.name=r_name;
      this.address=r_address;
      this.email=r_email;
      this.website=r_website;
+     r_id=createID(id);
     }
 
-   
+   public String createID(String id)
+    {
+      char first=name.charAt(0);
+        char last=address.charAt(0);
+        if(first==' ')
+        {
+            first='X';
+        }
+       if(last==' ')
+        {
+            last='X';
+        }
+      String id1=id+"-"+first+last;
+       return id1;
+    }
     
     
     //getter method
-    public int getR_ID()
+    public String getR_ID()
     {
      return this.r_id;
     }
@@ -55,7 +71,7 @@ public class Restaurant {
     }
     
     //setter method
-    public void r_Setter(int id,int r_contact,String r_name,String r_address,String r_email,String r_website)
+    public void r_Setter(String id,int r_contact,String r_name,String r_address,String r_email,String r_website)
     {
      this.r_id=id;
      this.contact=r_contact;

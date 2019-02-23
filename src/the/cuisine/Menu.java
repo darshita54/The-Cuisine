@@ -13,24 +13,40 @@ import java.util.Date;
  */
 public class Menu {
     
-    int m_id;
+    String m_id;
     String type,category;
     Date startDate,endDate;
     Restaurant restaurant;
     
     
     //constructor 
-    public Menu(int id,String m_type,String m_category,Date s_date,Date e_date)
+    public Menu(String id,String m_type,String m_category,Date s_date,Date e_date)
     {
-      this.m_id=id;
       this.type=m_type;
       this.category=m_category;
       this.startDate=s_date;
       this.endDate=e_date;
+      m_id=createID(id);
+    }
+    
+    public String createID(String id)
+    {
+      char first=type.charAt(0);
+        char last=category.charAt(0);
+        if(first==' ')
+        {
+            first='X';
+        }
+       if(last==' ')
+        {
+            last='X';
+        }
+      String id1=id+"-"+first+last;
+       return id1;
     }
     
     //getter method
-    public int getID()
+    public String getID()
     {
       return this.m_id;
     }
@@ -52,7 +68,7 @@ public class Menu {
     }
     
     //setter method
-    public void mSetter(int id,String m_type,String m_category,Date s_date,Date e_date)
+    public void mSetter(String id,String m_type,String m_category,Date s_date,Date e_date)
     {
       this.m_id=id;
       this.type=m_type;

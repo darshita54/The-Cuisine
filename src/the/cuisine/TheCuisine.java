@@ -32,7 +32,7 @@ public class TheCuisine {
         
         
         System.out.println("-----------Category----------");
-        Category c=new Category(1,"meal","Indian");
+        Category c=new Category(date,"meal","Indian");
         c.C_Display();
        
         //Constructor of Item class

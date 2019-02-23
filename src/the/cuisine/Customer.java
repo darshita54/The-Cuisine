@@ -18,9 +18,10 @@ public class Customer extends Person {
    public Customer(String type, String date, String p_lname, String p_fname, String p_email, Double p_contact){
         super(date, p_lname, p_fname, p_email, p_contact);
         this.type = type;
+        
     }
 
-   
+            
     //getter
     public String getc_type(){
         return this.type;

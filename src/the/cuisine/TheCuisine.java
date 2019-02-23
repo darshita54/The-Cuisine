@@ -63,10 +63,10 @@ public class TheCuisine {
         od.o_Display();
         
         
-        
+        // logic for id
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now();  
-         System.out.println(dtf.format(now));
+       //  System.out.println(dtf.format(now));
         String fname=p.fname;
         String lname=p.lname;
         char first=fname.charAt(0);
@@ -80,10 +80,9 @@ public class TheCuisine {
             last='X';
         }
        String id=dtf.format(now)+"-"+first+last;
-       System.out.println(id);
-       
-        
-        System.out.println(first);
+       System.out.println("id:"+id);
+             
+      
          
     }
     

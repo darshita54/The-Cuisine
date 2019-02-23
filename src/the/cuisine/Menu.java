@@ -22,8 +22,8 @@ public class Menu {
     //constructor 
     public Menu(String id,String m_type,String m_category,Date s_date,Date e_date)
     {
-      this.type=m_type;
-      this.category=m_category;
+      this.type=m_type.toUpperCase();
+      this.category=m_category.toUpperCase();
       this.startDate=s_date;
       this.endDate=e_date;
       m_id=createID(id);

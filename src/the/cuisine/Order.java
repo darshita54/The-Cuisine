@@ -12,7 +12,7 @@ import java.util.Date;
  * @author 1894461
  */
 public class Order {
-    int id;
+    String id;
     Date date;
     Double quantity;
     int totalAmount;
@@ -20,15 +20,30 @@ public class Order {
     
 
   //constructor
-  public Order(int o_id,Date o_date,Double o_quantity,int o_totalAmount){
-  this.id =o_id;
+  public Order(String o_id,Date o_date,Double o_quantity,int o_totalAmount){
+  this.id =createID(o_id);
   this.date =o_date;
   this.quantity =o_quantity;
   this.totalAmount =o_totalAmount;
 }
+public String createID(String id)
+    {
+      char first=' ';
+        char last=' ';
+        if(first==' ')
+        {
+            first='X';
+        }
+       if(last==' ')
+        {
+            last='X';
+        }
+      String id1=id+"-"+first+last;
+       return id1;
+    }
 
 // getter
-   public int getid(){
+   public String getid(){
    return this.id;
 }   
    public Date getdate(){
@@ -42,7 +57,7 @@ public class Order {
    }
    //setter
    
-   public void o_setter(int o_id,Date o_date,Double o_quantity,int o_totalAmount){
+   public void o_setter(String o_id,Date o_date,Double o_quantity,int o_totalAmount){
        this.id = o_id;
        this.date = o_date;
        this.quantity = o_quantity;

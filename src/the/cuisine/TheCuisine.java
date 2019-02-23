@@ -71,7 +71,7 @@ public class TheCuisine {
         
         // Order Constrctor
         System.out.println("-----------Order----------");
-        Order od = new Order(12,tempdate3,2.0,15);
+        Order od = new Order(date,tempdate3,2.0,15);
         od.o_Display();
         
 

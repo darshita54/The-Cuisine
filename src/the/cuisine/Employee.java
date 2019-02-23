@@ -16,9 +16,10 @@ public class Employee extends Person {
     Order order;
 // Constructor
 
-    public Employee(String date, String p_lname, String p_fname, String p_email, double p_contact,double salary) {
-        super(date, p_lname, p_fname,  p_email, p_contact);
+    public Employee(String id, String p_lname, String p_fname, String p_email, double p_contact,double salary) {
+        super(id, p_lname, p_fname,  p_email, p_contact);
         this.salary=salary;
+        
     }
     
    
@@ -34,6 +35,8 @@ public class Employee extends Person {
     
 // Functiopn to display 
     public void E_display(){
+        System.out.println("Employee id:"+p_id);
         System.out.println("Salary is  :"+salary);
+        
     }
 }

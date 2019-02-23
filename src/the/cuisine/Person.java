@@ -28,12 +28,37 @@ public class Person {
     public Person(double p_p_id, String p_lname, String p_fname, String p_email,Double p_contact)
     {
         
-     this.p_id= p_p_id;
+    
      this.lname = p_lname;
      this.fname=p_fname;
      this.email = p_email;
      this.contact = p_contact; 
+     
+     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
+        LocalDateTime now = LocalDateTime.now();  
+       //  System.out.println(dtf.format(now));
+        char first=fname.charAt(0);
+        char last=lname.charAt(0);
+        if("".equals(first))
+        {
+            first='X';
+        }
+       if("".equals(last))
+        {
+            last='X';
+        }
+       String p_id=dtf.format(now)+"-"+first+last;
+       System.out.println("id:"+p_id);
+        this.p_id= p_p_id;
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     //setter
     public void setp_id(double p_id){

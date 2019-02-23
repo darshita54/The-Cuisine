@@ -48,7 +48,7 @@ public class TheCuisine {
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
          System.out.println("-----------Person----------");
-        Person p=new Person(date,"Liliy","Abc","abc@gmail.com",1234567.0);
+        Person p=new Person(date," ","abc ","abc@gmail.com",1234567.0);
         p.P_Display();
         
          // Constructor of Employee class

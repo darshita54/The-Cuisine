@@ -40,11 +40,11 @@ public class Person {
     {
       char first=fname.charAt(0);
         char last=lname.charAt(0);
-        if("".equals(first))
+        if(first==' ')
         {
             first='X';
         }
-       if("".equals(last))
+       if(last==' ')
         {
             last='X';
         }

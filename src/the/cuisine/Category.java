@@ -11,19 +11,35 @@ package the.cuisine;
  */
 public class Category {
     
-  int c_id;
+   String c_id;
   String c_Name,c_Type;
   Menu menu;
-    
+  
    
-    Category(int C_Id, String C_Name, String C_Type)
+    Category(String C_Id, String C_Name, String C_Type)
    {
-       this.c_id=C_Id;
-       this.c_Name=C_Name;
-       this.c_Type=C_Type;
+      
+       this.c_Name=C_Name.toUpperCase();
+       this.c_Type=C_Type.toUpperCase();
+       c_id=createID(C_Id);
    }
+    public String createID(String id)
+    {
+      char first=c_Name.charAt(0);
+        char last=c_Type.charAt(0);
+        if(first==' ')
+        {
+            first='X';
+        }
+       if(last==' ')
+        {
+            last='X';
+        }
+      String id1=id+"-"+first+last;
+       return id1;
+    }
 
-    public void setC_id(int c_id) {
+    public void setC_id(String c_id) {
         this.c_id = c_id;
     }
 
@@ -35,7 +51,7 @@ public class Category {
         this.c_Type = Type;
     }
 
-    public double getC_id() {
+    public String getC_id() {
         return c_id;
     }
 

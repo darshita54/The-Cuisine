@@ -29,24 +29,27 @@ public class Person {
     {
         
     
-     this.lname = p_lname;
-     this.fname=p_fname;
+     this.lname = p_lname.toUpperCase();
+     this.fname=p_fname.toUpperCase();
      this.email = p_email;
-     this.contact = p_contact; 
-     
-   
-        char first=fname.charAt(0);
+     this.contact = p_contact;      
+      p_id=createID(id);
+    }
+    
+    public String createID(String id)
+    {
+      char first=fname.charAt(0);
         char last=lname.charAt(0);
-        if("".equals(first))
+        if(first==' ')
         {
             first='X';
         }
-       if("".equals(last))
+       if(last==' ')
         {
             last='X';
         }
-       p_id=id+"-"+first+last;
-      
+      String id1=id+"-"+first+last;
+       return id1;
     }
 
     //setter

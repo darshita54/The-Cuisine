@@ -21,16 +21,12 @@ public class TheCuisine {
     public static void main(String[] args) {
         // TODO code application logic here
         //Constructor of Category class
-        
-        
+              
         //date
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        
-        
-        
-        
+            
         System.out.println("-----------Category----------");
         Category c=new Category(date,"meal","Indian");
         c.C_Display();
@@ -73,9 +69,7 @@ public class TheCuisine {
         System.out.println("-----------Order----------");
         Order od = new Order(date,tempdate3,2.0,15);
         od.o_Display();
-        
-
-         
+                
     }
     
 }

@@ -17,9 +17,10 @@ import java.util.Date;
  */
 public class Person {
     
-   String p_id;
-    String fname;
-    String lname;
+   static String p_id;
+   static String fname;
+   static String lname;
+    static char last;
    // Date date;
     String email;
     double contact;
@@ -33,13 +34,14 @@ public class Person {
      this.fname=p_fname.toUpperCase();
      this.email = p_email;
      this.contact = p_contact;      
-      p_id=createID(id);
+      p_id=createPersonID(id);
     }
     
-    public String createID(String id)
+    public static String createPersonID(String id)
     {
-      char first=fname.charAt(0);
-        char last=lname.charAt(0);
+      char first;
+       first = fname.charAt(0);
+        last=lname.charAt(0);
         if(first==' ')
         {
             first='X';

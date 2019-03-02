@@ -53,9 +53,9 @@ public class PersonJUnitTest {
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        String fname="A";
+        String fname="S";
         String lname="X";
-        String expectedResult="19-Mar-02-AX";
+        String expectedResult="19-Mar-02-SX";
         String result=Person.createPersonID(date,fname,lname);
         
          assertEquals(expectedResult, result);

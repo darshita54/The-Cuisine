@@ -21,9 +21,9 @@ public final class Item {
         this.i_Name=I_Name;
         this.i_Price=I_Price;
         this.i_Quantity=I_Quantity;
-        i_id=createID(I_id);
+        i_id=createID(I_id,I_Name);
     }
-  public String createID(String id)
+  public String createID(String id, String i_Name)
     {
       char first=i_Name.charAt(0);
         char last=" ".charAt(0);

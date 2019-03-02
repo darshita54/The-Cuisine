@@ -46,7 +46,7 @@ public class itemJUnitTest {
     // public void hello() {}
     public void testID()
     {
-     System.out.println("Test for ID");
+     System.out.println("Test for item ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);

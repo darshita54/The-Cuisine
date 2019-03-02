@@ -47,7 +47,7 @@ public class MenuJUnitTest {
      @Test
     public void testMenuID()
     {
-     System.out.println("Test for restaurant ID");
+     System.out.println("Test for Menu ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);

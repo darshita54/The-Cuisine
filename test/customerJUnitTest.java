@@ -48,7 +48,7 @@ public class customerJUnitTest {
    @Test
     public void testID()
     {
-     System.out.println("Test for ID");
+     System.out.println("Test for customer ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);

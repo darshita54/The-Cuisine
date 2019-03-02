@@ -47,7 +47,7 @@ public class EmployeeJunitTest {
     
     public void testID()
     {
-     System.out.println("Test for ID");
+     System.out.println("Test for Employee ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);

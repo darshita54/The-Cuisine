@@ -6,7 +6,6 @@
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,9 +18,9 @@ import the.cuisine.Person;
  *
  * @author 1894434
  */
-public class PersonJUnitTest {
+public class MenuJUnitTest {
     
-    public PersonJUnitTest() {
+    public MenuJUnitTest() {
     }
     
     @BeforeClass
@@ -45,17 +44,16 @@ public class PersonJUnitTest {
     //
     // @Test
     // public void hello() {}
-    
-    @Test
-    public void testPersonID()
+     @Test
+    public void testMenuID()
     {
-     System.out.println("Test for person ID");
+     System.out.println("Test for restaurant ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        String fname="S";
-        String lname="X";
-        String expectedResult="19-Mar-02-SX";
+        String fname="C";
+        String lname="S";
+        String expectedResult="19-Mar-02-CS";
         String result=Person.createPersonID(date,fname,lname);
         
          assertEquals(expectedResult, result);

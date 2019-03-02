@@ -6,22 +6,20 @@
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import the.cuisine.Person;
 
 /**
  *
- * @author 1894434
+ * @author 1894461
  */
-public class PersonJUnitTest {
+public class EmployeeJunitTest {
     
-    public PersonJUnitTest() {
+    public EmployeeJunitTest() {
     }
     
     @BeforeClass
@@ -44,23 +42,24 @@ public class PersonJUnitTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     // @Test
-    // public void hello() {}
-    
+    // public void hello() {} 
     @Test
-    public void testPersonID()
+    
+    public void testID()
     {
-     System.out.println("Test for person ID");
+     System.out.println("Test for ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        String fname="S";
+        String fname="A";
         String lname="X";
-        String expectedResult="19-Mar-02-SX";
-        String result=Person.createPersonID(date,fname,lname);
-        
+        String expectedResult="19-Mar-02-AX";
+        String result=the.cuisine.Employee.createPersonID(date,fname,lname);
+   
          assertEquals(expectedResult, result);
         
         
      
     }
+    
 }

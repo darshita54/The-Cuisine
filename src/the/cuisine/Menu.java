@@ -26,10 +26,10 @@ public class Menu {
       this.category=m_category.toUpperCase();
       this.startDate=s_date;
       this.endDate=e_date;
-      m_id=createID(id);
+      m_id=createID(id,type,category);
     }
     
-    public String createID(String id)
+    public String createID(String id,String type,String category)
     {
       char first=type.charAt(0);
         char last=category.charAt(0);

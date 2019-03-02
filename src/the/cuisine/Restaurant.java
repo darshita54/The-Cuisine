@@ -24,10 +24,10 @@ public final class Restaurant {
      this.address=r_address;
      this.email=r_email;
      this.website=r_website;
-     r_id=createID(id);
+     r_id=createID(id,name,address);
     }
 
-   public String createID(String id)
+   public String createID(String id,String name,String Address)
     {
       char first=name.charAt(0);
         char last=address.charAt(0);

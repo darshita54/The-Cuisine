@@ -19,9 +19,9 @@ import the.cuisine.Person;
  *
  * @author 1894434
  */
-public class NewJUnitTest {
+public class PersonJUnitTest {
     
-    public NewJUnitTest() {
+    public PersonJUnitTest() {
     }
     
     @BeforeClass
@@ -53,10 +53,10 @@ public class NewJUnitTest {
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        char fname="Adcvf".charAt(0);
-        char lname="Xfdf".charAt(0);
+        String fname="A";
+        String lname="X";
         String expectedResult="19-Mar-02-AX";
-        String result=Person.createPersonID(date);
+        String result=Person.createPersonID(date,fname,lname);
         
          assertEquals(expectedResult, result);
         

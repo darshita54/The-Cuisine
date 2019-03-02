@@ -16,7 +16,7 @@ public class Customer extends Person {
     String type; 
     Order order;
     //constructor
-   public Customer(String type, String id, String p_lname, String p_fname, String p_email, Double p_contact){
+   public Customer(String id, String type, String p_lname, String p_fname, String p_email, Double p_contact){
         super(id, p_lname, p_fname, p_email, p_contact);
         this.type = type;
         this.c_id=createID(id);

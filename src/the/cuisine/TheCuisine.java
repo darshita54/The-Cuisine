@@ -62,7 +62,7 @@ public class TheCuisine {
         
         //customer construcotr 
        System.out.println("-----------Customer----------");
-        Customer cust = new Customer("Indian",date,"Sachin","Tendulkar","ab@gmail.com",784235.5);
+        Customer cust = new Customer(date,"Indian","Sachin","Tendulkar","ab@gmail.com",784235.5);
         cust.c_Display();
         
         // Order Constrctor

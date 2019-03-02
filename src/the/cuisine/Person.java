@@ -34,10 +34,10 @@ public class Person {
      this.fname=p_fname.toUpperCase();
      this.email = p_email;
      this.contact = p_contact;      
-      p_id=createPersonID(id);
+      p_id=createPersonID(id,fname,lname);
     }
     
-    public static String createPersonID(String id)
+    public static String createPersonID(String id,String fname,String lname)
     {
       char first;
        first = fname.charAt(0);

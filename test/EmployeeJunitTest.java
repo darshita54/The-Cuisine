@@ -53,7 +53,7 @@ public class EmployeeJunitTest {
         String date=dtf.format(now);
         String fname="A";
         String lname="X";
-        String expectedResult="19-Mar-02-AX";
+        String expectedResult="19-Mar-03-AX";
         String result=the.cuisine.Employee.createPersonID(date,fname,lname);
    
          assertEquals(expectedResult, result);

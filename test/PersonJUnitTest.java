@@ -55,7 +55,7 @@ public class PersonJUnitTest {
         String date=dtf.format(now);
         String fname="S";
         String lname="X";
-        String expectedResult="19-Mar-02-SX";
+        String expectedResult="19-Mar-03-SX";
         String result=Person.createPersonID(date,fname,lname);
         
          assertEquals(expectedResult, result);

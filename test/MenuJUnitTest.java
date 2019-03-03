@@ -53,7 +53,7 @@ public class MenuJUnitTest {
         String date=dtf.format(now);
         String fname="C";
         String lname="S";
-        String expectedResult="19-Mar-02-CS";
+        String expectedResult="19-Mar-03-CS";
         String result=Person.createPersonID(date,fname,lname);
         
          assertEquals(expectedResult, result);

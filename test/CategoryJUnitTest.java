@@ -12,15 +12,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import the.cuisine.Person;
 
 /**
  *
- * @author 1894434
+ * @author 1894420
  */
-public class RestaurantJUnitTest {
+public class CategoryJUnitTest {
     
-    public RestaurantJUnitTest() {
+    public CategoryJUnitTest() {
     }
     
     @BeforeClass
@@ -44,19 +43,19 @@ public class RestaurantJUnitTest {
     //
     // @Test
     // public void hello() {}
+      @Test
     
-     @Test
-    public void testRestaurantID()
+    public void testID()
     {
-     System.out.println("Test for restaurant ID");
+     System.out.println("Test for Category ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        String fname="T";
-        String lname="3";
-        String expectedResult="19-Mar-03-T3";
-        String result=Person.createPersonID(date,fname,lname);
-        
+        String fname="M";
+        String lname="I";
+        String expectedResult="19-Mar-03-MI";
+        String result=the.cuisine.Employee.createPersonID(date,fname,lname);
+   
          assertEquals(expectedResult, result);
         
         

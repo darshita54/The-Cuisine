@@ -54,7 +54,7 @@ public class OrderJUnitTest {
         String date=dtf.format(now);
         String fname="O";
         String lname="3";
-        String expectedResult="19-Mar-02-O3";
+        String expectedResult="19-Mar-03-O3";
         String result=Person.createPersonID(date,fname,lname);
         
          assertEquals(expectedResult, result);

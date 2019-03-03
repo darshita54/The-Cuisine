@@ -21,12 +21,12 @@ public final class Item {
         this.i_Name=I_Name;
         this.i_Price=I_Price;
         this.i_Quantity=I_Quantity;
-        i_id=createID(I_id,I_Name,I_Name);
+        i_id=createID(I_id);
     }
-  public static String createID(String id, String i_Name,String i_name)
+  public static String createID(String id)
     {
-      char first=i_Name.charAt(0);
-        char last=i_name.charAt(0);
+      char first=' ';
+        char last=' ';
         if(first==' ')
         {
             first='X';

@@ -52,9 +52,9 @@ public class OrderJUnitTest {
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        String fname="O";
-        String lname="3";
-        String expectedResult="19-Mar-03-O3";
+        String fname="X";
+        String lname="X";
+        String expectedResult="19-Mar-03-XX";
         String result=the.cuisine.Order.createID(date);
         
          assertEquals(expectedResult, result);

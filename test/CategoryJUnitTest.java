@@ -54,7 +54,7 @@ public class CategoryJUnitTest {
         String fname="M";
         String lname="I";
         String expectedResult="19-Mar-03-MI";
-        String result=the.cuisine.Employee.createPersonID(date,fname,lname);
+        String result=the.cuisine.Category.createID(date,fname,lname);
    
          assertEquals(expectedResult, result);
         

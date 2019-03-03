@@ -43,18 +43,18 @@ public class EmployeeJunitTest {
     //
     // @Test
     // public void hello() {} 
-    @Test
     
+    @Test   
     public void testID()
     {
      System.out.println("Test for Employee ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
         LocalDateTime now = LocalDateTime.now(); 
         String date=dtf.format(now);
-        String fname="A";
-        String lname="X";
-        String expectedResult="19-Mar-03-AX";
-        String result=the.cuisine.Employee.createPersonID(date,fname,lname);
+        String fname=" ";
+        String lname=" ";
+        String expectedResult="19-Mar-03-XX";
+        String result=the.cuisine.Employee.createID(date,fname,lname);
    
          assertEquals(expectedResult, result);
         

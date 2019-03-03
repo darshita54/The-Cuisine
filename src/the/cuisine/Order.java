@@ -26,7 +26,7 @@ public class Order {
   this.quantity =o_quantity;
   this.totalAmount =o_totalAmount;
 }
-public String createID(String id)
+public static String createID(String id)
     {
       char first=' ';
         char last=' ';

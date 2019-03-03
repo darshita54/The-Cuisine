@@ -15,15 +15,17 @@ public class Employee extends Person {
     String e_id;
     double salary;
     Order order;
+    String fname;
 // Constructor
 
     public Employee(String id, String p_lname, String p_fname, String p_email, double p_contact,double salary) {
         super(id, p_lname, p_fname,  p_email, p_contact);
         this.salary=salary;
-        e_id=createID(id);
+   
+        e_id=createID(id," "," ");
     }
     
-   public String createID(String id)
+   public static  String createID(String id,String Fname,String Lname)
     {
       char first=' ';
         char last=' ';

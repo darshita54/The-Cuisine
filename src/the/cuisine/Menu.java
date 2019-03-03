@@ -29,7 +29,7 @@ public class Menu {
       m_id=createID(id,type,category);
     }
     
-    public String createID(String id,String type,String category)
+    public static String createID(String id,String type,String category)
     {
       char first=type.charAt(0);
         char last=category.charAt(0);

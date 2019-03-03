@@ -21,12 +21,12 @@ public class Category {
       
        this.c_Name=C_Name.toUpperCase();
        this.c_Type=C_Type.toUpperCase();
-       c_id=createID(C_Id);
+       c_id=createID(C_Id,c_Name,c_Type);
    }
-    public String createID(String id)
+    public static String createID(String id,String Cname,String Ctype)
     {
-      char first=c_Name.charAt(0);
-        char last=c_Type.charAt(0);
+      char first=Cname.charAt(0);
+        char last=Ctype.charAt(0);
         if(first==' ')
         {
             first='X';

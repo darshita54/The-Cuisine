@@ -55,7 +55,7 @@ public class customerJUnitTest {
         String fname="X";
         String lname="X";
         String expectedResult="19-Mar-03-XX";
-        String result=Person.createPersonID(date,fname,lname);
+        String result=the.cuisine.Customer.createID(date,fname,lname);
         
          assertEquals(expectedResult, result);
         

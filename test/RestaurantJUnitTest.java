@@ -55,7 +55,7 @@ public class RestaurantJUnitTest {
         String fname="T";
         String lname="3";
         String expectedResult="19-Mar-03-T3";
-        String result=Person.createPersonID(date,fname,lname);
+         String result=the.cuisine.Restaurant.createID(date,fname,lname);
         
          assertEquals(expectedResult, result);
         

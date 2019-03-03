@@ -46,7 +46,7 @@ public class OrderJUnitTest {
     // public void hello() {}
     
     @Test
-    public void testRestaurantID()
+    public void testOrderID()
     {
      System.out.println("Test for Order ID");
      DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yy-MMM-dd");  
@@ -55,7 +55,7 @@ public class OrderJUnitTest {
         String fname="O";
         String lname="3";
         String expectedResult="19-Mar-03-O3";
-        String result=Person.createPersonID(date,fname,lname);
+        String result=the.cuisine.Order.createID(date);
         
          assertEquals(expectedResult, result);
         

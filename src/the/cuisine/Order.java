@@ -25,6 +25,7 @@ public class Order {
   this.date =o_date;
   this.quantity =o_quantity;
   this.totalAmount =o_totalAmount;
+  
 }
 public static String createID(String id)
     {

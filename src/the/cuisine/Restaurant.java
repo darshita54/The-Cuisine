@@ -27,7 +27,7 @@ public final class Restaurant {
      r_id=createID(id,name,address);
     }
 
-   public static String createID(String id,String name,String Address)
+   public static String createID(String id,String name,String address)
     {
       char first=name.charAt(0);
         char last=address.charAt(0);

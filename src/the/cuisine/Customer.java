@@ -19,11 +19,11 @@ public class Customer extends Person {
    public Customer(String id, String type, String p_lname, String p_fname, String p_email, Double p_contact){
         super(id, p_lname, p_fname, p_email, p_contact);
         this.type = type;
-        this.c_id=createID(id);
+        this.c_id=createID(id,type,type);
         
     }
 
-   public String createID(String id)
+   public static String createID(String id,String fname, String lname)
     {
       char first=' ';
         char last=' ';
